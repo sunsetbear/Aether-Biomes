@@ -3,14 +3,13 @@ package com.sunsette.aetherbiomes.item;
 import com.sunsette.aetherbiomes.AetherBiomesTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import com.aetherteam.aether.AetherTags;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.crafting.Ingredient;
+import org.jetbrains.annotations.NotNull;
+
 
 import java.util.function.Supplier;
 
 public enum AetherBiomesItemTiers implements Tier {
-    ATMOSINE(0, 250, 10.5F, 1.0F, 14, () -> Ingredient.of(AetherBiomesTags.Items.ATMOSINE_REPAIRING));
+    ATMOSINE(1, 250, 10.5F, 1.0F, 14, () -> Ingredient.of(AetherBiomesTags.Items.ATMOSINE_REPAIRING));
     private final int harvestLevel;
     private final int maxUses;
     private final float efficiency;
@@ -52,7 +51,7 @@ public enum AetherBiomesItemTiers implements Tier {
     }
 
     @Override
-    public Ingredient getRepairIngredient() {
+    public @NotNull Ingredient getRepairIngredient() {
         return this.repairMaterial.get();
     }
 }
