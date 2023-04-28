@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "aether:block/furnace_front_on",
+    "side": "aether:block/furnace_side",
+    "top": "aether:block/furnace_top"
+  }
+}

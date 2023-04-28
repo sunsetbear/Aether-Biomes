@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aether:block/crystal_planks",
+    "up": "aether:block/crystal_planks",
+    "north": "aether:block/crystal_planks",
+    "east": "aether:block/crystal_planks",
+    "south": "aether:block/crystal_planks",
+    "west": "aether:block/crystal_planks",
+    "particle": "aether:block/crystal_planks"
+  },
+  "render_type": "solid"
+}

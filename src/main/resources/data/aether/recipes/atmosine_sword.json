@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "aether:atmosine_shard"
+    },
+    "/": {
+      "tag": "aether:skyroot_stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "/"
+  ],
+  "result": {
+    "item": "aether:atmosine_sword"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "aether:crystal_planks"
+    },
+    "/": {
+      "tag": "aether:skyroot_stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "#/",
+    " /"
+  ],
+  "result": {
+    "item": "aether:skyroot_axe"
+  },
+  "show_notification": true
+}

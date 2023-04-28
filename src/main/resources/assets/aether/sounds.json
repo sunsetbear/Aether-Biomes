@@ -1,0 +1,25 @@
+{
+  "block.aether_portal.ambient": { "category": "block","replace": true, "pitch": 1.0, "sounds": [ "aether:customportal/portal" ] }, 
+  "block.aether_portal.travel": { "category": "block","replace": true, "pitch": 1.0, "sounds": [ "aether:customportal/travel" ] }, 
+  "block.aether_portal.trigger": { "category": "block","replace": true, "pitch": 1.0, "sounds": [ "aether:customportal/trigger" ] },
+  "music.menu": {
+    "sounds": [
+	  {
+        "name": "aether:music/menu2",
+        "stream": true
+      }
+    ]
+  },
+  "music.aether": {
+    "sounds": [
+      {
+        "name": "aether:music/aether6",
+        "stream": true
+      },
+      {
+        "name": "aether:music/aether7",
+        "stream": true
+      }
+    ]
+  }
+}

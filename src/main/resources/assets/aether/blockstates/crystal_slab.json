@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aether:block/crystal_slab"
+    },
+    "type=top": {
+      "model": "aether:block/crystal_slab_top"
+    },
+    "type=double": {
+      "model": "aether:block/crystal_slab_full"
+    }
+  }
+}

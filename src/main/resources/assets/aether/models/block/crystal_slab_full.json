@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "aether:block/crystal_planks",
+    "top": "aether:block/crystal_planks",
+    "side": "aether:block/crystal_planks"
+  },
+  "render_type": "solid"
+}

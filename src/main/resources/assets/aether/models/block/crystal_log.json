@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aether:block/crystal_log_top",
+    "up": "aether:block/crystal_log_top",
+    "north": "aether:block/crystal_log",
+    "east": "aether:block/crystal_log",
+    "south": "aether:block/crystal_log",
+    "west": "aether:block/crystal_log",
+    "particle": "aether:block/crystal_log_top"
+  },
+  "render_type": "solid"
+}

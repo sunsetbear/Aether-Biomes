@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "aether:block/atmosine_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "aether:block/atmosine_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "aether:block/atmosine_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "aether:block/atmosine_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "aether:block/atmosine_cluster"
+    },
+    "facing=west": {
+      "model": "aether:block/atmosine_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

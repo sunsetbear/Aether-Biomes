@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "aetherbiomes:blocks/crystal_door_bottom"
+  },
+  "render_type": "cutout"
+}
