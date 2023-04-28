@@ -10,7 +10,7 @@ public class AtmosineSwordHitProcedure {
         if (entity == null)
             return;
         if (entity instanceof LivingEntity _entity)
-            _entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 3));
+            _entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 2));
     }
 
 }
