@@ -13,7 +13,7 @@ import net.minecraftforge.event.entity.living.LivingFallEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = AetherBiomes.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = AetherBiomes.MOD_ID)
 public class AbilityListener {
     /**
      * @see ValkyrieArmor#handleFlight(LivingEntity)
@@ -29,23 +29,4 @@ public class AbilityListener {
         }
     }
 
-    /**
-     * @see GravititeArmor#boostedJump(LivingEntity)
-     */
-
-
-    /**
-     * @see AbilityHooks.ArmorHooks#fallCancellation(LivingEntity)
-     */
-    @SubscribeEvent
-    public static void onEntityFall(LivingFallEvent event) {
-        LivingEntity livingEntity = event.getEntity();
-        if (!event.isCanceled()) {
-            event.setCanceled(AbilityHooks.ArmorHooks.fallCancellation(livingEntity));
-        }
-    }
-
-    /**
-     * @see PhoenixArmor#extinguishUser(LivingEntity, DamageSource)
-     */
 }

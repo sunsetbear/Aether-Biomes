@@ -13,7 +13,6 @@ import net.minecraft.world.phys.Vec3;
 import static net.minecraft.client.player.Input.*;
 
 public interface AtmosineAbility {
-    boolean usedDJ = ABEquipmentUtil.alreadyUsedDoubleJump;
     static void handleJump(LivingEntity entity) {
         if (ABEquipmentUtil.hasFullAtmosineSet(entity)) {
             if (entity instanceof Player player && !player.getAbilities().flying) { // The player can't have creative flight enabled, otherwise it causes issues.
@@ -22,6 +21,7 @@ public interface AtmosineAbility {
                     if (!player.getLevel().isClientSide()) { // Updates the flight modifier and timer values.
                         if (aetherPlayer.isJumping() && !player.isOnGround() && usedDJ) { // Checks if the player is off the ground and holding the jump key (space bar by default).
                             aetherPlayer.setFlightTimer(0);
+                            entity.push(0.0, 0.5, 0.0);
                             ABEquipmentUtil.alreadyUsedDoubleJump = true;
                         }
                         if (player.isOnGround()) { // Resets both timer and modifier if the player is on the ground.
@@ -39,4 +39,5 @@ public interface AtmosineAbility {
             }
         }
     }
+    boolean usedDJ = ABEquipmentUtil.alreadyUsedDoubleJump;
 }
