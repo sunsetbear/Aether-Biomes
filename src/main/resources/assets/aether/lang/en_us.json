@@ -23,6 +23,11 @@
   "block.aether.aether_biomes_grass_block": "Aether Grass Block",
   
   "item.aether.atmosine_shard": "Atmosine Shard",
+  "item.aether.atmosine_helmet": "Atmosine Helmet",
+  "item.aether.atmosine_chestplate": "Atmosine Chestplate",
+  "item.aether.atmosine_leggings": "Atmosine Leggings",
+  "item.aether.atmosine_boots": "Atmosine Boots",
+  "item.aether.atmosine_gloves": "Atmosine Gloves",
   "item.aether.atmosine_axe": "Atmosine Axe",
   "item.aether.atmosine_pickaxe": "Atmosine Pickaxe",
   "item.aether.atmosine_shovel": "Atmosine Shovel",
