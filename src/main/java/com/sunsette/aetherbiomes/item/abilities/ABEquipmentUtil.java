@@ -12,6 +12,8 @@ public class ABEquipmentUtil {
         return hasArmorSet(entity, AetherBiomesItems.ATMOSINE_HELMET.get(), AetherBiomesItems.ATMOSINE_CHESTPLATE.get(), AetherBiomesItems.ATMOSINE_LEGGINGS.get(), AetherBiomesItems.ATMOSINE_BOOTS.get(), AetherBiomesItems.ATMOSINE_GLOVES.get());
     }
     static boolean alreadyUsedDoubleJump = false;
+    static int jumpHeldTimer = 0;
+    static boolean prevPress = false;
     private static boolean hasArmorSet(LivingEntity entity, Item helmet, Item chestplate, Item leggings, Item boots, Item gloves) {
         return entity.getItemBySlot(EquipmentSlot.HEAD).is(helmet)
                 && entity.getItemBySlot(EquipmentSlot.CHEST).is(chestplate)
@@ -19,5 +21,4 @@ public class ABEquipmentUtil {
                 && entity.getItemBySlot(EquipmentSlot.FEET).is(boots)
                 && CuriosApi.getCuriosHelper().findFirstCurio(entity, gloves).isPresent();
     }
-
 }
