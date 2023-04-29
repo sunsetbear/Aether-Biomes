@@ -13,7 +13,8 @@ public class ABEquipmentUtil {
     }
     static boolean alreadyUsedDoubleJump = false;
     static int jumpHeldTimer = 0;
-    static boolean prevPress = false;
+    static boolean canJump = true;
+    static int timeSinceGround = 0;
     private static boolean hasArmorSet(LivingEntity entity, Item helmet, Item chestplate, Item leggings, Item boots, Item gloves) {
         return entity.getItemBySlot(EquipmentSlot.HEAD).is(helmet)
                 && entity.getItemBySlot(EquipmentSlot.CHEST).is(chestplate)
