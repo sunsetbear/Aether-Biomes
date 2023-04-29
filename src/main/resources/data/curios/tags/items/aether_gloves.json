@@ -1,0 +1,9 @@
+{
+  "values": [
+    "aether:atmosine_gloves",
+    {
+      "id": "#curios:hands",
+      "required": false
+    }
+  ]
+}
